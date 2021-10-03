@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Yings_weatherForecast",
+  "version": "1.0",
+  "author": "ying",
+  "description": "weather forecast",
+
+  "icons": {
+    "128": "img/icon128.png"
+  },
+
+  "browser_action": {
+    "default_title": "Weather Forecast",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "img/icon128.png",
+      "32": "img/icon32.png",
+      "48": "img/icon48.png"
+    }
+  },
+  "permissions": ["tabs"]
+}
