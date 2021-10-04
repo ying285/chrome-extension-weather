@@ -74,7 +74,7 @@ const displayUI = (data) => {
   console.log(time);
 
   //body time
-  let list = data.list.slice(1, 6);
+  let list = data.list.slice(1, 5);
   console.log(list);
   for (let i = 0; i < list.length; i++) {
     bodyTimes[i].textContent = list[i].dt_txt.slice(11, 16);
