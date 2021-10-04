@@ -21,7 +21,7 @@ body {
   width: 25rem;
   height: 15rem;
   box-shadow: var(--Shadow);
-
+  border: none;
   border-radius: 15px;
   padding: 2rem;
 }
