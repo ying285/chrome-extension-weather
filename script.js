@@ -32,9 +32,9 @@ const displayUI = (data) => {
   //current weather
   titleWeather.textContent = `Weather: ${data.list[0].weather[0].main}`;
   //current pressure
-  titlePressure.textContent = `Pressure: ${data.list[0].main.pressure}`;
+  titlePressure.textContent = `Pressure: ${data.list[0].main.pressure} hPa`;
   //current visibility
-  titleVisibility.textContent = `Visibility: ${data.list[0].visibility}`;
+  titleVisibility.textContent = `Visibility: ${data.list[0].visibility} m`;
 
   //update title img
   data.list.forEach((el) => {
@@ -44,7 +44,7 @@ const displayUI = (data) => {
       titleImg.src = "img/cloud.png";
     } else if (el.weather[0].main === "Snow") {
       titleImg.src = "img/snowflake.png";
-    } else if (el.weather[0].main === "Sun") {
+    } else if (el.weather[0].main === "Clear") {
       titleImg.src = "img/sun.png";
     } else if (el.weather[0].main === "Extreme") {
       titleImg.src = "img/thunderstorm.png";
@@ -61,7 +61,7 @@ const displayUI = (data) => {
       bodyImgs[i].src = "img/cloud.png";
     } else if (data.list.slice(1, 5)[i].weather[0].main === "Snow") {
       bodyImgs[i].src = "img/snowflake.png";
-    } else if (data.list.slice(1, 5)[i].weather[0].main === "Sun") {
+    } else if (data.list.slice(1, 5)[i].weather[0].main === "Clear") {
       bodyImgs[i].src = "img/sun.png";
     } else if (data.list.slice(1, 5)[i].weather[0].main === "Extreme") {
       bodyImgs[i].src = "img/thunderstorm.png";
